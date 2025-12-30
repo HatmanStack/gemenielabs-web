@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import svelte from 'eslint-plugin-svelte';
 import svelteParser from 'svelte-eslint-parser';
+import globals from 'globals';
 
 export default [
   js.configs.recommended,
@@ -27,16 +28,7 @@ export default [
   },
   {
     languageOptions: {
-      globals: {
-        document: 'readonly',
-        window: 'readonly',
-        fetch: 'readonly',
-        console: 'readonly',
-        Event: 'readonly',
-        KeyboardEvent: 'readonly',
-        MouseEvent: 'readonly',
-        HTMLElement: 'readonly',
-      },
+      globals: globals.browser,
     },
     rules: {
       'no-unused-vars': ['error', { argsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_' }],

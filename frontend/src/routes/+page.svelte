@@ -66,7 +66,7 @@
 </main>
 
 <footer class="container">
-	<p>&copy; 2026 {company.name}</p>
+	<p>&copy; {new Date().getFullYear()} {company.name}</p>
 </footer>
 
 <ContactModal bind:open={contactOpen} />

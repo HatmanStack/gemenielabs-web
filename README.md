@@ -4,7 +4,7 @@ Minimal company page for Gemenie Labs.
 
 ## Structure
 
-```
+```text
 ├── frontend/          # SvelteKit static site
 │   └── src/lib/data.ts  # Edit content here
 ├── backend/           # AWS Lambda + SES contact form
