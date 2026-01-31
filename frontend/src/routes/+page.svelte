@@ -66,7 +66,7 @@
 </main>
 
 <footer class="container">
-	<p>&copy; {new Date().getFullYear()} {company.name}</p>
+	<p>&copy; {new Date().getFullYear()} {company.name} · <a href="https://privacy.hatstack.fun" target="_blank" rel="noopener">Privacy</a></p>
 </footer>
 
 <ContactModal bind:open={contactOpen} />
