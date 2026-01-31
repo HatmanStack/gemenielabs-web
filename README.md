@@ -1,7 +1,16 @@
-# Gemenie Labs Website
+<div align="center">
 
-Minimal company page for Gemenie Labs.
+![Gemini Banner](frontend/static/og-image.jpg)
 
+Minimal company page for Gemenie Labs
+
+[Site](https://gemenielabs.hatstack.fun)
+
+---
+
+</div>
+
+Minimal company page for Gemenie Labs
 ## Structure
 
 ```text

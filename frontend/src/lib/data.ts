@@ -1,3 +1,11 @@
+export const seo = {
+  siteUrl: 'https://gemenielabs.hatstack.fun',
+  title: 'Gemenie Labs | Mobile & Web Applications Powered by AI',
+  description: 'Building modern applications with AI, cloud, and cutting-edge frameworks. From document intelligence to family memory preservation, creating useful software that solves real problems.',
+  image: '/og-image.jpg',
+  twitterHandle: '@HatmanStack',
+};
+
 export const company = {
   name: 'Gemenie Labs',
   tagline: 'Mobile & Web Applications Powered by AI',
