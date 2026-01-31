@@ -6,6 +6,25 @@
 	let { children } = $props();
 
 	const socialUrls = links.map(l => l.url);
+
+	const jsonLdData = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'Organization',
+		name: company.name,
+		url: seo.siteUrl,
+		logo: `${seo.siteUrl}/favicon.svg`,
+		description: seo.description,
+		sameAs: socialUrls,
+		knowsAbout: [
+			'Mobile App Development',
+			'AI/ML Integration',
+			'Cloud Architecture',
+			'React Native',
+			'AWS',
+			'Generative AI'
+		]
+	});
+	const jsonLdScript = '<scr' + 'ipt type="application/ld+json">' + jsonLdData + '</scr' + 'ipt>';
 </script>
 
 <svelte:head>
@@ -37,25 +56,8 @@
 	<meta name="twitter:image:alt" content="{company.name} - {company.tagline}" />
 
 	<!-- JSON-LD Structured Data -->
-	{@html `<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "${company.name}",
-  "url": "${seo.siteUrl}",
-  "logo": "${seo.siteUrl}/favicon.svg",
-  "description": "${seo.description}",
-  "sameAs": ${JSON.stringify(socialUrls)},
-  "knowsAbout": [
-    "Mobile App Development",
-    "AI/ML Integration",
-    "Cloud Architecture",
-    "React Native",
-    "AWS",
-    "Generative AI"
-  ]
-}
-</script>`}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html jsonLdScript}
 </svelte:head>
 
 {@render children()}
