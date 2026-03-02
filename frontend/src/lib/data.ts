@@ -35,11 +35,11 @@ export const projects = [
     github: 'https://github.com/HatmanStack/RAGStack-Lambda',
   },
   {
-    name: 'Hold That Thought',
+    name: 'Family Archive',
     description: 'Private family platform for preserving and sharing memories. Upload scanned letters with AI transcription and search your family archive conversationally.',
     tech: ['SvelteKit', 'AWS Lambda', 'DynamoDB'],
     url: 'https://showcase-htt.hatstack.fun/',
-    github: 'https://github.com/HatmanStack/hold-that-thought',
+    github: 'https://github.com/HatmanStack/family-archive-document-ai',
   },
   {
     name: 'Float',
